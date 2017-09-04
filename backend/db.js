@@ -6,6 +6,6 @@ module.exports = {
         password: '123456',
         database: 'test',
         port: '3306',
-        // debug: false,
+        // debug: true,
     }
 }

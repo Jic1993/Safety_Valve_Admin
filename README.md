@@ -1,21 +1,30 @@
-# my-project
+# 安全阀校验系统
 
-> A Vue.js project
 
-## Build Setup
+## 前言
 
-``` bash
-# install dependencies
-npm install
+事情是这样，我爸是一名安全阀校验员，他那边需要一个安全校验系统的软件，我也正好以此作为一个学习的机会，满足一下自己对Vue和Node的好奇。
 
-# serve with hot reload at localhost:8080
-npm run dev
+# 使用说明
 
-# build for production with minification
-npm run build
+- 录入
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+1. 录入员填写安全阀校验的委托申请单，并点击**添加**；
+2. 然后在右侧的派发栏中点击**派发任务**，系统会自动生成《校验委托申请单》的Excel文件。
+这步之后校验员界面中才能看到待校验的任务列表数据。
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- 校验
+
+校验员在待校验的任务列表中点击一行，表示选中该校验任务开始校验，等校验完成，并填入所有校验数据后，点击**结束本次任务**，则校验完成。
+
+- 送审
+
+每当完成一个校验后，在录入员界面的送审栏中就可以看到已经检验完成的任务数据，选择并点击**提交送审**，这步之后审核人界面才能看到该待审核的校验任务数据。
+
+- 审核
+
+选择要通过的校验记录，并点击**批量审核**，此时后台自动生成相应的《校验记录》EXCEL文档。
+
+- 签发
+
+选择要通过的校验记录，并点击**批量签发**，此时后台自动生成相应的《校验报告》EXCEL文档，并且将该校验记录写入《校验台帐》EXCEL文档

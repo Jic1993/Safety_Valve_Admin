@@ -1,3 +1,8 @@
+/*
+  测试数据库连接
+*/
+
+
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',

@@ -1,5 +1,8 @@
 /*
   reviewTest 审核校验记录
+
+  NOTE: 初步实现中 暂定为 在校验记录被审核之后，创建相应的校验记录EXCEL文档
+
 */
 
 var express = require('express');

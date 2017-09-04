@@ -1,5 +1,5 @@
 /*
-  genTestAppplysByIds 根据校验委托申请单的Id数组 从数据库查询相关记录，创建EXCEL文件
+  genTestApplysByIds 根据校验委托申请单的Id数组 从数据库查询相关记录，创建EXCEL文件
 */
 
 var mysql = require('mysql');

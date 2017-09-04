@@ -236,7 +236,7 @@
 
         <el-col :span="12">
          <el-form-item style="float:right;padding-right:10px">
-          <el-button type="primary" @click="submitForm('applyForm')">新增任务</el-button>
+          <el-button type="primary" @click="submitForm('applyForm')">添加</el-button>
           <el-button @click="resetForm('applyForm')">重置</el-button>
          </el-form-item>
         </el-col>

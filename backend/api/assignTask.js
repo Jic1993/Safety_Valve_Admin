@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var jsonParser = bodyParser.json();
 var mysql = require('mysql');
 var dbConfig = require('../db');
-var genTestAppplysByIds = require('./report/genTestAppplysByIds');
+var genTestApplysByIds = require('./report/genTestApplysByIds');
 
 // 使用DB配置信息创建一个MySQL连接池
 var pool = mysql.createPool( dbConfig.mysql );
@@ -29,7 +29,7 @@ router.post('/', jsonParser, function(req, res, next) {
       if(result) {
         console.log("result assignTask: ", result);
         // TODO：生成委托申请单
-        genTestAppplysByIds(param.ids);
+        genTestApplysByIds(param.ids);
 
         res.json({code: 200, msg: '任务派发成功'});
       }else{
