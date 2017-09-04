@@ -12,7 +12,7 @@
           <template slot="title" style="bordr-bottom:0px"><i class="el-icon-document"></i>报告管理</template>
           <!-- <el-menu-item index="/reporttest">add</el-menu-item> -->
           <!-- <el-menu-item index="/report">台账</el-menu-item> -->
-          <el-menu-item index="">
+          <el-menu-item index="report-1">
             <a href="./backend/api/report/excel1/" target="_blank">浏览报告</a>
           </el-menu-item>
         </el-submenu>

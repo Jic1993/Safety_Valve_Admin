@@ -231,8 +231,8 @@ export default {
   created() {
     this.$message({
       showClose: true,
-      message: '温馨提示：请耐心等待字体加载完成~',
-      duration: 4500
+      message: '温馨提示：请耐心等待字体加载完成。若字体加载失败，可以尝试刷新一下网页~',
+      duration: 5500
     });
 
     this.loadUserTable();
