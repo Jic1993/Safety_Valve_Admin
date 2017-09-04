@@ -12,9 +12,11 @@
           <template slot="title" style="bordr-bottom:0px"><i class="el-icon-document"></i>报告管理</template>
           <!-- <el-menu-item index="/reporttest">add</el-menu-item> -->
           <!-- <el-menu-item index="/report">台账</el-menu-item> -->
-          <el-menu-item index="report-1">
+
+          <el-menu-item>
             <a href="./backend/api/report/excel1/" target="_blank">浏览报告</a>
           </el-menu-item>
+
         </el-submenu>
 
         <el-menu-item index="/user"  v-show="menuVisible['user']"><i class="el-icon-menu"></i>用户管理</el-menu-item>
@@ -95,7 +97,7 @@
           签发
           <ul>
             <li>
-              选择要通过的校验记录，并点击<b>批量签发</b>，此时后台自动生成相应的《校验报告》EXCEL文档，并且将该校验记录写入《校验台帐》Excel文档
+              选择要通过的校验记录，并点击<b>批量签发</b>，此时后台自动生成相应的《校验报告》Excel文档，并且将该校验记录写入《校验台帐》Excel文档
             </li>
           </ul>
         </li>
@@ -204,6 +206,9 @@ export default {
 }
 .el-menu-item:hover {
     border-bottom: 0px solid transparent;
+}
+.el-menu-item a {
+  display: block;
 }
 .role {
   line-height: 60px;
