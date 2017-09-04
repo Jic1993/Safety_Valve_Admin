@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "jic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "exceljs": "^0.5.1",
+    "express": "^4.15.4",
+    "mysql": "^2.14.1"
+  }
+}
